@@ -1,0 +1,9 @@
+ /*@-webkit-keyframes loop {
+  from {-webkit-transform:translateY(0px);}
+  to {-webkit-transform:translateY(1000px);}
+}
+
+main {
+  -webkit-animation: loop 35s linear infinite;
+  overflow: hidden;
+}*/
