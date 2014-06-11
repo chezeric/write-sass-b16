@@ -1,0 +1,63 @@
+@function em($a)
+  $value: 1
+  @if $a > 0
+    @for $i from 1 through $a
+      $value: $value * 1.618
+  @return $value + "em"
+
+body
+  font-family: 'Raleway', sans-serif
+  font-weight: 400
+  line-height: 1.45
+
+p
+  margin-bottom: 1.3em
+  font-family: 'PT Serif', serif
+
+
+
+%large-font
+  margin: 1.414em 0 0.5em
+  font-weight: 800
+  line-height: 1.2
+
+
+h1
+  @extend %large-font
+  margin-top: 0
+  font-size: em(5)
+
+h2
+  @extend %large-font
+  font-size: em(4)
+
+h3
+  @extend %large-font
+  font-size: em(3)
+
+h4
+  @extend %large-font
+  font-size: em(2)
+
+h5
+  @extend %large-font
+  font-size: em(1)
+
+small, .font_small
+  font-size: 0.618em
+
+a
+  text-decoration: none
+  color: $red-orange
+  &:hover
+    color: $light-green
+
+.main-welcome-heading
+  font-size: em(3)
+  color: $red-orange
+
+.info-header
+  font-size: em(1)
+
+.info-bit-text
+  font-size: em(1)
